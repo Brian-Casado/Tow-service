@@ -1,0 +1,465 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bricolage+Grotesque&family=Dancing+Script:wght@400;700&family=Inter:wght@300&family=PT+Serif&family=Poppins:wght@500&family=Roboto:ital,wght@0,100;0,300;1,100&family=Tilt+Prism&display=swap');
+body {
+    margin: 0;
+    background-color: rgb(234, 232, 232);
+    font-family: "Poppins", sans-serif;
+    
+}
+img{
+    max-width: 100%;
+}
+
+.logo{
+    margin-left: 3%;
+    width: 100%;
+    color: rgb(65, 65, 68);
+
+}
+@media screen and (max-width: 768px) {
+    .logo{
+        position: relative;
+        max-width: 100%;
+        height: auto; /* Para mantener la relación de aspecto de la imagen */
+        margin-left: 100px;
+        top: 8px;
+
+
+    }
+    
+}
+.logo a{
+    text-decoration: none;
+    color: rgb(65, 65, 68);
+    
+     
+}
+
+.toggle-menu{
+    position: fixed;
+    top: -1rem;
+    left: -0.6rem;
+    cursor: pointer;
+    filter: invert(1);
+    width: 80px;
+    z-index: 999999;
+    transition: ease 2s;
+    filter: brightness(00.1);
+}
+@media screen and (min-width: 768px) {
+    .toggle-menu {
+        display: none;
+        
+    }
+
+    
+}
+.main-menu {
+    position: fixed;
+    width: 100%;
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0px;
+    padding-left: 0;
+    padding-bottom: 10%;
+    z-index: 99999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: transparent;
+    -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(100px);
+    transition: transform 0.3s;
+    transform: translateY(-100%);
+    border: 1px solid gray;
+    
+    
+}
+
+.nav_img{
+    margin-bottom: -0px;
+    max-width: 100%;
+    min-width: 100%;
+    object-fit:cover;
+    margin: 0;
+}
+.main-menu--show{
+    transform: translateY(0);
+}
+
+@media screen and (min-width: 768px) {
+    .main-menu {
+        flex-direction: row;
+        justify-content: flex-end;
+        transform: translateY(0);
+        z-index: 22;
+        margin-bottom: 200px;
+        padding-bottom: 0px;
+
+
+    }
+    
+}
+.main-menu__item {
+    margin-right: 25px;
+}
+.main-menu__link {
+    color: rgb(49, 49, 50);
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 20px;
+}
+#active{
+    text-decoration: underline;
+    font-size: larger;
+    color: #bc7d08;
+}
+
+.main-nav button{
+    width: 270px;
+    padding: 10px 5px;
+    background-color:#ffa600;border: none;
+    margin: 10px;
+    border-radius: 1em;
+    transition: 200ms ease;
+    cursor: pointer;
+    font-size: 14px;
+}
+#btn button {
+    color: rgb(65, 65, 68);
+}
+#btn button:hover{
+    background-color:#ec9a01;
+    border: none;
+    transform: translateY(-2%);
+}
+
+.wallpapper{
+    width: 100%;
+}
+main{
+    position: relative;
+}
+.container{
+    position: absolute;
+    top: 75%;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+main button{
+    width: 270px;
+    padding: 10px 5px;
+    background-color:#ffa600;border: none;
+    border-radius: 1em;
+    transition: 200ms ease;
+    cursor: pointer;
+    font-size: 14px;
+    z-index: 99;
+
+}
+
+.info-area{
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    height: 75vh;
+    background-color: rgb(209, 207, 207);
+    margin: 2.5%;
+    border-radius: 2em;
+    box-shadow: 10px 20px 30px rgba(131, 131, 131, 0.619);
+    justify-content: space-evenly;
+    gap: 5px;
+    align-items: center;
+}
+
+@media screen and (max-width:952px) {
+    .info-area{
+        padding: 10px;
+        overflow: hidden;
+        font-size: 8px;
+        margin-bottom: 80px;
+
+    }
+    #ii{
+        font-size: 8vw;
+        margin-top: 20px;
+
+    }
+
+
+
+}
+
+
+[class*="item"]{
+    text-align: center;
+}
+
+.item1{
+    width: 30%;
+    height: 50%;
+    background-color: rgb(185, 184, 184);
+    border-radius: 2em;
+    box-shadow: 10px 20px 30px rgba(131, 131, 131, 0.619);
+
+}
+
+.item1 h2{
+    position: relative;
+    top: 10%;
+
+}
+.item1 i{
+    margin-top: 10%;
+    font-size: 5rem;
+    color: #bc7d08;
+
+}
+.item2 i{
+    margin-top: 10%;
+    font-size: 5rem;
+    color: #555454;
+
+}
+.item3 i{
+    margin-top: 10%;
+    font-size: 5rem;
+
+}
+.item2 h2{
+    position: relative;
+    top: 10%;
+}.item3 h2{
+    position: relative;
+    top: 10%;
+}
+
+.item2{
+    width: 33%;
+    height: 50%;
+    background-color: rgb(185, 184, 184);
+    border-radius: 2em;
+    box-shadow: 10px 20px 30px rgba(131, 131, 131, 0.619);
+}.item3{
+    width: 33%;
+    height: 50%;
+    background-color: rgb(185, 184, 184);
+    border-radius: 2em;
+    box-shadow: 10px 20px 30px rgba(131, 131, 131, 0.619);
+}
+
+.service-container{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    background: url(assets/Service-tow.webp);
+    background-size: cover;
+}
+
+.service{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: #ffff;
+    margin-top: 2%;
+    margin-right: 5%;
+}
+
+.service-text{
+    position: relative;
+    background: transparent;
+    -webkit-backdrop-filter: blur(40px);
+    backdrop-filter: blur(10px);
+    width: 50%; /* Change to 100% to take the full width of the container */
+    color: rgb(204, 199, 182);
+    padding: 20px; /* Add padding for better spacing */
+    margin: 20%;
+    border-radius: 10px;
+    box-shadow: 10px 10px 100px rgba(22, 22, 22, 0.466);
+
+}
+
+.service-text h5{
+    color: #ffa600;
+    font-size: larger;
+}
+
+.service-text i{
+    color: #ffa600;
+}
+
+
+  .service-text li {
+    padding-left: 20px; /* Espaciado para separar el ícono del contenido del elemento de la lista */
+    background-size: 16px; /* Ajusta el tamaño del ícono según sea necesario */
+    list-style: none; /* Oculta el marcador predeterminado */
+    padding-left: 0;
+  }
+
+  .service-container::before {
+    content: "";
+    flex: 1;
+}
+
+.service-container::after {
+    content: "";
+    flex: 1;
+}
+
+@media screen and (max-width: 1068px) {
+    .service-text {
+        width: 100%; /* Adjust the width for smaller screens if needed */
+        margin: 0;
+    }
+}
+
+.a1{
+    color: #2e2e2e;
+
+}
+.service-text h2{
+    color: #2e2e2e;
+
+  } 
+  
+  .service-text h4{
+    color: #2e2e2e;
+
+
+  }
+
+  .row{
+    display: flex;
+    height: auto;
+    width: 100%;
+    
+  }
+  .row h2{
+    color: #ffff;
+  }
+
+
+  .item-1{
+    font-size: larger;
+    flex: 75%;
+    background-color: #2e2e2e;
+    background: url(assets/tow-wallpapper-dark.jpg);
+    background: brightness(120%);
+    background-size: cover;
+    height: 300px;
+    z-index: -22;
+    overflow: hidden;
+    
+  }
+
+
+
+  .item-1 h2{
+    mix-blend-mode: -10%;
+  }
+  .item-1 h2::before {
+    content: '|';
+    margin-right: 5px; /* Ajusta según sea necesario */
+    color: #ffc400;
+    font-size: 1.2em; /* Ajusta según sea necesario */
+    z-index: 100;
+}
+.item-1 p{
+    color: #ffff;
+}
+
+#contac-button{
+    background: transparent;
+    -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(100px);
+    z-index: 22;
+}
+
+@media screen and (max-width: 552px) {
+    .item-1 p{
+        font-size: 15px;
+    }
+    #contac-button{
+        width: 170px;
+        padding: 10px 5px;
+        border-radius: 1em;
+        transition: 200ms ease;
+        cursor: pointer;
+        font-size: 9px;
+        z-index: 9;
+
+      }
+
+}
+
+
+#contac-butto-color{
+    position: absolute;
+    left: 17%;
+    z-index: -1;
+    background-color: rgba(206, 167, 12, 0.135);
+    color: #ffff;
+
+}
+
+.item-2{
+    display: flex;
+    background-color: #ed9d0a;
+    flex: 25%;
+    flex-direction: column;
+    padding: 20px 10px;
+    overflow: hidden;
+
+  }
+  .item-2 i{
+    justify-content: space-between;
+    font-size: 5vw;
+    color: #ffff;
+    height: 100%;
+
+  }
+
+
+  footer{
+    display: flex;
+    position: relative;
+    color: rgb(26, 20, 20);
+    text-align: center;
+    font-size: 12px;
+}
+.container1{
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(69, 69, 69);
+
+
+
+}
+
+.icon-footer{
+    font-size: 14px;
+
+}
+.row1{
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: -20px;
+    background-color: rgb(69, 69, 69);
+    text-align: center;
+    width: 100%;
+    
+    
+}
+.tex-cont{
+    font-size: 16px;
+    padding-top: 8%;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+

@@ -1,0 +1,689 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: #f3f2f2;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+h2, h3, p {
+    margin: 0;
+}
+.about-skills, .apple-container, .contact, .foot {
+    margin-top: 0;
+    padding-top: 0;
+}
+@media (max-width: 768px) {
+    .about-skills, .apple-container, .contact, .foot {
+        height: auto; /* Ajusta la altura según sea necesario */
+        margin-top: 0; /* Ajusta el margen según sea necesario */
+        padding-top: 1rem; /* Ajusta el relleno según sea necesario */
+    }
+}
+
+
+
+
+.main-menu__item {
+    padding: 1em;
+    
+}
+
+.main-menu__link:hover{
+    color: orange;
+    transition: ease 0.3s;
+}
+.main-menu__link {
+    color: rgb(90, 90, 90);
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: transform 1s;
+}
+
+#button-reset {
+    color: orange;
+}
+.toggle-menu{
+    position: fixed;
+    top: -1rem;
+    left: -0.6rem;
+    cursor: pointer;
+    filter: invert(1);
+    width: 80px;
+    z-index: 21;
+    border-radius: 100px;
+
+}
+.toggle-menu img{
+    padding: 0%;
+}
+.toggle-menu img:hover {
+    filter: invert(0.2) brightness(1); /* Invierte colores y aumenta el brillo */
+}
+
+
+@media screen and (min-width: 768px) {
+    .toggle-menu {
+        display: none;
+    }
+
+
+}
+
+@media screen and (min-width: 390px) and (min-height: 844px) {
+    /* Estilos para el toggle menú en esta pantalla */
+    .toggle-menu {
+        position: fixed;
+        top: 1rem;
+        left: 0.6rem;
+        cursor: pointer;
+        filter: invert(0.1);
+        width: 80px;
+        z-index: 21;
+        border-radius: 10px;
+        padding: 10px;
+        transition: ease 0.3s;
+        display: flex; /* Para centrar verticalmente el icono */
+        justify-content: center; /* Para centrar verticalmente el icono */
+        align-items: center; /* Para centrar verticalmente el icono */
+    }
+    
+    .toggle-menu i {
+        font-size: 24px; /* Tamaño del icono */
+    }
+
+    .toggle-menu img {
+        padding: 0%;
+    }
+
+    .toggle-menu img:hover {
+        filter: invert(0.2) brightness(1); /* Invierte colores y aumenta el brillo */
+    }
+}
+
+.main-menu {
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(253, 122, 40);
+    transition: transform 0.3s;
+    transform: translateY(-100%);
+    position: fixed;
+    width: 100%;
+    background: transparent ;
+    border: 2px solid rgba(160, 160, 160, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter:blur(30px);
+    z-index:9;
+
+}
+.main-menu--show{
+    transform: translateY(0);
+}
+
+@media screen and (min-width: 768px) {
+    .main-menu {
+        flex-direction: row;
+        justify-content: flex-end;
+        transform: translateY(0);
+
+    }
+    
+}
+
+
+/* Picture area */
+.guy-picture img {
+    width: 100%;
+}
+
+.hii-text {
+    position: absolute;
+    top: 5rem;
+    left: 5rem;
+    color: rgb(207, 202, 202);
+    animation: fade-in 1s ease-in-out;
+    font-size: 1.2rem;
+}
+
+@media  screen and (max-width:768px) {
+    .hii-text{
+        position: absolute;
+        top: 7rem;
+        font-size: 11px;
+    }
+    
+}
+
+    
+
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.black-cube {
+    width: 100%;
+    height: 30rem;
+    position: relative;
+    top: -30rem;
+    background-color: black;
+    text-align: center;
+    margin: 0%;
+}
+
+@media (max-width: 100em) {
+    .black-cube {
+        width: 100%;
+        height: 23rem;
+        position: relative;
+        top: -1rem;
+    }
+}
+
+.black-cube span {
+    color: #ffffff;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    margin-top: 13rem;
+    margin-right: 1rem;
+    font-size: 2rem;
+}
+
+@media (max-width: 100em) {
+    .black-cube span {
+        font-size: 1.5rem;
+        margin-top: 16%;
+    }
+}
+
+
+
+
+.about-skills {
+    position: relative;
+    top: -30rem;
+    width: 100%;
+    height: 30rem;
+    margin-top: -3%;
+    margin-bottom: 15rem;
+}
+
+.about-skills h2 {
+    color: rgb(0, 0, 0);
+}
+
+.about {
+    position: relative;
+    top: 4rem;
+    left: 2rem;
+    margin: 3rem;
+    width: 50%;
+}
+
+.about h2 {
+    position: relative;
+    margin-left: 2.5rem;
+}
+
+.about p {
+    margin-top: 1%;
+    position: relative;
+}
+
+@media (max-width: 100em) {
+    .about-skills {
+        margin-top: 29rem;
+        align-items: center;
+        align-content: center;
+        height: 55rem;
+        transition: ease 200ms;
+        margin-bottom: -4rem;
+    }
+
+    .about {
+        left: 18%;
+        position: relative;
+        top: 4rem;
+        transition: ease 200ms;
+
+    }
+
+    .about h2 {
+        text-align: center;
+        left: -4%;
+    }
+
+    .about p {
+        margin: 1%;
+        text-align: center;
+        font-size: 0.8rem;
+    }
+
+
+}
+
+.skills {
+    position: relative;
+    top: -12rem;
+    width: 50%;
+    text-align: center;
+    left: 50%;
+}
+
+.skills h2 {
+    left: 25%;
+    position: relative;
+    text-align: center;
+    width: 50%;
+}
+
+.skills img {
+    width: 6rem;
+    height: 6rem;
+    margin: 0.2%;
+    display: inline-block;
+    position: relative;
+    border-radius: 0.3rem;
+    margin-top: 3%;
+}
+
+@media (max-width: 100em) {
+    .skills {
+        position: relative;
+        top: 5rem;
+        align-items: center;
+        font-size: 1rem;
+        width: 90%;
+        left: 1rem;
+
+    }
+
+}
+
+hr {
+    margin-top: 169px;
+    margin-left: -25px;
+    height: 0.1rem;
+    max-width: 100%;
+    border: none;
+    background-image: linear-gradient(to right, transparent 1%, rgba(0, 0, 0, 0.795) 40%, rgba(0, 0, 0, 1) 60%, transparent 100%);
+    position: relative;
+    top: -50rem;
+}
+
+.hrr{
+    position: relative;
+    top: -30rem;
+
+}
+
+.ff-container {
+    position: relative;
+    top: -53rem;
+    max-width: 100%;
+    height: 75%;
+    background-color: rgba(91, 139, 84, 0.811);
+
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    align-items:center;
+    height: 80vh;
+    overflow: hidden;
+}
+.flex-container img {
+    position: absolute;
+    margin-top: 135px;
+    top: -3rem;
+    width: 35%;
+    animation: rotate 10s linear infinite;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 5%;
+    overflow: hidden;
+    overflow-y: hidden;
+    max-height: none;
+    z-index: 222;
+    
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(360deg);
+    }
+  }
+  @media screen and (max-width:100em){
+.flex-container img{
+    position: relative;
+    top: 0rem;
+    width: 400px;
+}
+  }
+    
+    
+  
+  .shaking-portfolio{
+    position: relative;
+    top: 80%;
+  }
+
+  .flex-container h2{
+    font-size: 5rem;
+    text-align: center;
+    width: 30rem;
+    background-color: rgba(50, 113, 37, 0.552);
+    margin-left: 90%;
+    border-radius: 4%;
+    padding: 1%;
+    position: absolute; /* Agregar posición absoluta */
+    top: 0; /* Alinear el texto en la parte inferior del contenedor */
+    margin-top: 10px; /* Añadir un espacio entre la imagen y el texto */
+    max-width: 50%; /* Asegurarse de que el texto ocupe todo el ancho del contenedor */
+    text-align: center; /* Centrar el texto horizontalmente */
+    left: -89%;
+    width: 100%;
+  }
+
+  @media screen and (max-width:1370px) {
+  .flex-container h2{
+    font-size: 2rem;
+    text-align: center;
+    width: 30rem;
+    background-color: rgba(50, 113, 37, 0.552);
+    margin-left: 90%;
+    border-radius: 4%;
+    padding: 1%;
+    position: absolute; /* Agregar posición absoluta */
+    top: 0; /* Alinear el texto en la parte inferior del contenedor */
+    margin-top: 10px; /* Añadir un espacio entre la imagen y el texto */
+    max-width: 50%; /* Asegurarse de que el texto ocupe todo el ancho del contenedor */
+    text-align: center; /* Centrar el texto horizontalmente */
+    left: -89%;
+    width: 100%;
+  }    
+  }
+  .flex-container h3{
+    position: relative;
+    align-items: center;
+    top: 8rem;
+    font-size: 12em;
+    color: rgb(16, 72, 16);
+  }
+  @media  screen and (max-width:1368px) {
+    .flex-container h3{
+        top: 2.1em;
+        font-size: 7em;
+    }
+    
+}
+
+.flex-container h5 {
+    position: absolute; /* Agregar posición absoluta */
+    bottom: 0; /* Alinear el texto en la parte inferior del contenedor */
+    margin-top: 10px; /* Añadir un espacio entre la imagen y el texto */
+    max-width: 100%; /* Asegurarse de que el texto ocupe todo el ancho del contenedor */
+    text-align: center; /* Centrar el texto horizontalmente */
+    left: 0%;
+    width: 100%;
+    color: rgba(34, 61, 46, 0.585);
+}
+
+
+
+.ff-container1 {
+    position: relative;
+    top: -53rem;
+    max-width: 100%;
+    height: 75vh;
+    background-color: rgba(60, 37, 113, 0.552);
+
+}
+
+.flex-container1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    align-items:center;
+    height: 90vh;
+    overflow: hidden;
+}
+.flex-container1 img {
+    position: absolute;
+    top: 20%;
+    width: 350px;
+    border-radius: 5%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+  @media screen and (max-width:100em){
+
+  }
+    
+    
+  
+  .shaking-portfolio{
+    position: relative;
+    top: 80%;
+  }
+
+  .flex-container1 h2{
+    font-size: 5rem;
+    text-align: center;
+    width: 30rem;
+    background-color: rgba(46, 37, 113, 0.552);
+    margin-left: 90%;
+    border-radius: 4%;
+    padding: 1%;
+    position: absolute; /* Agregar posición absoluta */
+    top: 0; /* Alinear el texto en la parte inferior del contenedor */
+    margin-top: 10px; /* Añadir un espacio entre la imagen y el texto */
+    max-width: 50%; /* Asegurarse de que el texto ocupe todo el ancho del contenedor */
+    text-align: center; /* Centrar el texto horizontalmente */
+    left: -89%;
+    width: 100%;
+  }
+
+  @media screen and (max-width:1370px) {
+  .flex-container1 h2{
+    font-size: 2rem;
+    text-align: center;
+    width: 30rem;
+    background-color: rgba(46, 37, 113, 0.552);
+    margin-left: 90%;
+    border-radius: 4%;
+    padding: 1%;
+    position: absolute; /* Agregar posición absoluta */
+    top: 0; /* Alinear el texto en la parte inferior del contenedor */
+    margin-top: 10px; /* Añadir un espacio entre la imagen y el texto */
+    max-width: 50%; /* Asegurarse de que el texto ocupe todo el ancho del contenedor */
+    text-align: center; /* Centrar el texto horizontalmente */
+    left: -89%;
+    width: 100%;
+  }    
+  }
+  .flex-container1 h3{
+    position: relative;
+    align-items: center;
+    text-align: center;
+    left: 18rem;
+    top: 8rem;
+    font-size: 12em;
+    color: rgba(46, 23, 73, 0.697);
+  }
+  @media  screen and (max-width:768px) {
+    .flex-container1 h3{
+        top: 1.5em;
+        font-size: 5em;
+    }
+    
+}
+@media  screen and (min-width:768px) {
+    .flex-container1 h3{
+        font-size: 8em;
+ 
+    }
+    
+}
+.flex-container1 h5 {
+    position: absolute; /* Agregar posición absoluta */
+    bottom: 0; /* Alinear el texto en la parte inferior del contenedor */
+    margin-top: 10px; /* Añadir un espacio entre la imagen y el texto */
+    max-width: 100%; /* Asegurarse de que el texto ocupe todo el ancho del contenedor */
+    text-align: center; /* Centrar el texto horizontalmente */
+    left: 0%;
+    width: 100%;
+    color: rgba(34, 61, 46, 0.585);
+}
+@media screen and (min-width: 390px) and (min-height: 844px) {
+    .ff-container1{
+        background-color: rgba(60, 37, 113, 0.552);
+        height: 40rem;
+        margin: 1%;
+    }
+ 
+    .ff-container1 h3{
+        position: relative;
+        left: -1rem;
+    }
+
+}
+@media screen and (min-width: 390px) and (min-height: 844px) {
+    .ff-container{
+        height: 40rem;
+        margin: 1%;
+
+    }
+    .ff-container img{
+        top: -2rem;
+    }
+
+}
+
+
+
+
+.contact {
+    position: relative;
+    width: 100%;
+    top: -46rem;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente (opcional) */
+    height: 50rem;
+    margin-bottom: -23rem;
+}
+
+@media(max-width:100em){
+    .contact{
+        top: -38.5rem;
+        margin-bottom: -67%;
+    }
+}
+
+
+.contact h2 {
+    text-align: center;
+    position: absolute;
+    top: 15%;
+    font-size: 3rem;
+    text-decoration: underline;
+}
+
+.contact img {
+    position: relative;
+    width: 100px;
+    border-radius: 5%;
+    margin-right: 1%;
+    transition: transform 0.2s ease-in-out;
+}
+@media (max-width:100em){
+    .contact img{
+        width: 4rem;
+        margin-bottom: 35%;
+    }
+}
+
+.contact img:hover {
+    transform: scale(1.1); /* Cambia el tamaño de la imagen al pasar el cursor */
+}
+
+.foot {
+    position: relative;
+    margin-top: -33rem; /* Cambia top a margin-top */
+    color: #cecbcb;
+    width: 100%;
+    height: 30rem;
+    background-color: rgb(18, 17, 17);
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    padding: 0; /* Elimina cualquier relleno adicional */
+}
+@media(max-width:100m){
+    .foot{
+        margin-top:  110rem;
+    }
+}
+
+.foot h2{position: absolute;
+    margin-top: 2%;
+    font-size: 2rem;
+    text-align: center;
+
+}
+
+.foot p{
+    position: absolute;
+    margin-top: 15%;
+    text-align: center;
+    width: 100%;
+}
+
+.container-small{
+    position: relative;
+    top: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 4rem;
+    
+
+}
+.container-small small{
+    margin-right: 1%;
+}

@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #f3f2f2;
+    overflow-x: hidden; /* Avoid horizontal scroll */
+    overflow-y: auto; /* Allow vertical scroll */
+}
+
+.palabras {
+    color: rgb(80, 80, 79);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    background: transparent;
+    border: 0.1em solid rgba(126, 120, 120, 0.2); /* Updated to em */
+    backdrop-filter: blur(0.1em); /* Updated to em */
+    -webkit-backdrop-filter: blur(0.3em); /* Updated to em */
+    box-shadow: 0.11em rgba(80, 78, 78, 0.2); /* Updated to em */
+    padding: 0.40em; /* Updated to em */
+    margin: 0.2em; /* Updated to em */
+    border-radius: 0.5em; /* Updated to em */
+    position: fixed;
+    top: 1em; /* Updated to em */
+    left: 14em; /* Updated to em */
+    z-index: 2;
+    animation: fade-in 1s ease-in-out;
+}
+
+.palabras span {
+    position: relative;
+    display: inline-block;
+    margin-right: 1em; /* Updated to em */
+    text-align: center;
+    align-items: center;
+}
+
+.block {
+    display: flex;
+    color: #363030;
+    position: relative;
+    top: 7em;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background:#ffff;
+    height: 75px;
+    font-size: 0.80em;
+}
+
+#flecha-left{
+    margin-right: 3em;
+    font-size: 1.9em;
+}
+#flecha-rigth{
+    margin-left: 3em;
+    font-size: 1.9em;
+}
+
+.palabras-grades{
+    position: relative;
+    top: 13em;
+    font-size: 1.3em;
+    margin-left: 11em;
+    margin-top: -5.5em;
+
+}
+
+.palabra-store{
+    color: #0c0b0b;
+}
+
+.the-best{
+    color: #666363;
+}
+
+.empleadito{
+    position: relative;
+    top: 10em;
+    left: 65em;
+    
+    
+}
+.empleadito-img{  
+    border-radius: 20em;
+    
+}
+
+.need-help{
+    font-size: 0.9em;
+    position: relative;
+    top: -1.68em;
+}
+
+.ask-link{
+    position: relative;
+    left:3.1em;
+    text-decoration: none;
+    color: rgb(16, 126, 170);
+    margin-top: 0;
+}
+
+#cajita{
+    font-size: 2.7em;
+    position: relative;
+    top: 0.44em;
+}
+
+.toda{
+    position: relative;
+    top: -1em;
+}
+
+/*.dispositivos{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 8em;
+    left: -50em;   
+    gap: 1.6em;
+    max-height: 120px;
+    border: 2px solid #ddd;
+    display: flex;
+    overflow-x: auto;
+
+
+}*/
+
+.palabras-grades{
+    position: relative;
+    top: 40px;
+    left: -1000px;
+}
+
+
+.wrapper{
+    position: relative;
+    left: -50em;
+    top: 150px;
+    max-height: 120px;
+    display: flex;
+    overflow-x: auto;
+    
+
+}
+
+.wrapper .tem{
+    min-width: 110px;
+    height: 110px;
+    text-align: center;
+    margin-right: 20px;
+    position: relative;
+    top: 0px;
+    bottom: 0px;
+
+}
+
+.palabras-grades2{
+    position: relative;
+    top: 320px;
+    left: -770px;
+}
+
+.borderimg{
+    display: flex;
+    position: relative;
+    top: 325px;
+    left: -767px;
+    scrollbar-width: 100%;
+
+    
+}
+
+.borderimg img {
+    box-shadow: 5px 5px 8px #e2dbdb; /* Valores: (desplazamiento horizontal) (desplazamiento vertical) (radio de desenfoque) (color) */
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+.borderimg img:hover{
+    cursor: pointer;
+    font-size: 600px;
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.01);
+
+}
+
+.borderimg{
+    display: flex;
+    overflow-y: auto;
+    border-radius: 10px;
+        
+
+}
+
+.borderimg img{
+    margin-right: 20px;
+    font-size: 500px 520px;
+    box-shadow: 2px 2px 4px #706f6f;
+
+    
+}
+
+
+
+.palabras-container{   /*2222222322232 separacion*/
+    position: relative;
+    top: 440px;
+    left: -770px;
+}
+
+.palabras-gris{
+
+    color: #666363;
+    
+}
+.palabra-negra{
+    color: #0c0b0b;
+
+}
+
+
+.bo0rderimg{
+    display: flex;
+    position: relative;
+    top: 450px;
+    left: -767px;
+    scrollbar-width: 100%;
+    box-shadow: #0c0b0b;
+    
+}
+
+.bo0rderimg img{
+    box-shadow: 2px #363030;
+    border-radius: 20px;
+
+}
+.bo0rderimg{
+    display: flex;
+    overflow-y: auto;
+        
+
+}
+
+.bo0rderimg img{
+    margin-right: 30px;
+}
+
+.ee22{
+    margin-top: 20px;
+}
+
+
+

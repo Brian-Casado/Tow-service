@@ -1,0 +1,359 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}  
+
+body {
+    
+    margin: 0;
+    background: #f3f2f2;
+    overflow-x: hidden; /* Evita el scroll horizontal */
+    overflow-y: auto; /* Permite el scroll vertical */
+    
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0; /* Ajuste del relleno */
+}
+
+.container-texto{
+    display: flex;
+    position: relative;
+    top: 60px;
+}
+
+/* Resto de estilos aquí */
+
+.box {
+    background: rgb(148, 87, 87);
+    border-radius: 20px;
+    backdrop-filter: blur(0);
+    transition: backdrop-filter 0.5s ease-in-out;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    position: fixed;
+    display: block;
+    top: 10px;
+    
+    /* Agrega las propiedades para mantener la caja visible al hacer scroll */
+    position: fixed;
+    top: 20px; /* Ajusta la posición pegajosa según tus necesidades */
+    z-index: 1; /* Asegura que la caja esté por encima del contenido al hacer scroll */
+}
+
+
+.content {
+    position: relative;
+    z-index: 1;
+    
+}
+
+/* Resto de estilos aquí */
+
+/* Estilos específicos para .palabras fuera del .container */
+/* ... Resto de estilos aquí ... */
+
+/* Estilos para pantallas más grandes */
+.palabras {
+    color: rgb(106, 103, 98);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    background: transparent;
+    border: 2px solid rgba(126, 120, 120, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(30px);
+    box-shadow: 0 1px rgba(80, 78, 78, 0.2);
+    padding: 8px;
+    margin: 10px;
+    border-radius: 10px;
+    position: fixed;
+    top: 10px;
+    left: 235px;
+    z-index: 2; /* Asegura que .palabras esté por encima de otros elementos */
+    animation: fade-in 1s ease-in-out;
+}
+
+/* Estilos para pantallas más pequeñas (máximo 500px de ancho) */
+@media (max-width: 1220px) {
+    .palabras {
+        justify-content: space-between; /* Distribuye los elementos horizontalmente */
+        padding: 8px 10px; /* Ajusta el espaciado */
+        left: 400px; /* Cambia la posición a la izquierda */
+    }
+
+    /* Oculta todos los elementos dentro de .palabras excepto los íconos deseados */
+    .palabras span:not(:first-child):not(:nth-child(2)):not(:last-child) {
+        display: none;
+    }
+}
+
+.palabras span a{
+    text-decoration: none;
+    color: rgb(106, 103, 98);
+
+}
+
+.dd {
+    display: flex; 
+    margin-top: 20px;
+    font-size: 54px;
+    text-align: center;
+    white-space: nowrap;
+    position: relative;
+    z-index: 1; /* Asegura que .dd esté por debajo de .palabras */
+}
+
+@media (max-width:1320px){
+    #dd {
+        color: rgb(85, 81, 81);
+        font-size: 16px;
+}
+}
+
+@media (max-width:1020){
+    #parrafo{
+        font-size: 1px;
+    }
+}
+
+
+.parrafo {
+    display: flex;
+    font-size: 16px;
+    margin-top: 8px;
+    text-align: center;
+    position: relative;
+    z-index: 1; /* Asegura que .parrafo esté por debajo de .palabras */
+}
+
+
+
+.palabras span {
+    display: inline-block;
+    margin-right: 15px;
+    text-align: center;
+    align-items: center;
+}
+
+.dd {
+    display: flex;
+    margin-top: 20px;
+    font-size: 46px; /* Cambia el tamaño de fuente a 36px */
+    text-align: center;
+    white-space: nowrap;
+    position: relative;
+    z-index: 1;
+}
+
+.parrafo {
+    font-size: 35px; /* Cambia el tamaño de fuente a 20px */
+    margin-top: 8px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+
+.img1 {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(166, 161, 161, 0.1);
+    
+}
+@media (max-width:1020){
+    #img1{
+        width: 30px;
+        border-radius: 25px;
+    }
+}
+
+
+.shop-now-link{
+    position: relative;
+    top: 60px;
+    font-size: 30px;
+    color: rgb(40, 117, 153);
+    
+}
+.shop-now-link:hover{
+    color: rgb(75, 151, 218);
+    
+
+}
+.textos {
+    display: flex;
+    align-items: center; 
+    margin-top: -24px;
+    margin-left: 75px;
+    font-size: 15px;
+    position: relative;
+    top: 175px;
+}
+
+h4{
+    position: relative;
+    top: -650px;
+    left: 40px;
+    font-size: 19px;
+}
+
+.texto-h4{
+    position: relative;
+    top: -550px;
+    left: 40px;
+    margin-top: -40px;
+
+
+}
+
+.texto2-h4{
+    position: relative;
+    top: 550px;
+    left: 40px;  
+}
+
+.textos h2, .textos h3, .textos i {
+    margin-right: 20px; /* Agrega un margen derecho entre los elementos */
+}
+
+
+.cajas{ 
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 400px;
+    display: block;
+    background: #c9c9c9;
+    border-radius: 10px;
+    margin: 30px;
+}
+
+
+/* Resto de estilos aquí */
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.caja1foto img{
+    margin: 20px;
+    max-width: 90%;
+    
+    height: auto;
+    display: block;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(109, 106, 106, 0.1);
+    margin: 110px;
+    margin-left: 70px;
+}
+
+.caja1foto i{
+    float: left;
+    position: relative;
+    top: -500px;
+    left: 1100px;
+    font-size: 80px;
+
+}
+
+.caja2foto img{
+    padding: 800px 500px;
+    color: rgb(197, 6, 6);
+    box-shadow: 0 0 20px #94d900b8;
+    position: relative;   
+    max-width: 100%;
+
+}
+
+.caja img{
+    position: relative;
+    left: 250px;
+
+}
+
+.support {
+    position: relative;
+    top: -90px;
+    text-decoration: underline;
+    font-size: 50px;
+    transition: color 0.3s ease, transform 0.3s ease; /* Agrega transiciones suaves */
+}
+
+.support:hover {
+    color: rgb(9, 39, 62); /* Cambia el color al hacer hover */
+    transform: translateY(-10px); /* Mueve el elemento hacia arriba al hacer hover */
+}
+
+
+.support-texto .texto-h42 { 
+    position: relative;
+    top: -650px;
+    left: -190px;
+    
+    
+}
+.bloque-de-texto{
+    text-align: center;
+    margin: 40PX;
+    margin-top: -100px;
+    
+}
+
+.casado{
+    position: relative;
+    text-align: center;
+    align-items: center;
+}
+
+
+.wrapper{
+    max-height: 120px;
+    border: 2px solid #ddd;
+    display: flex;
+    overflow-x: auto;
+
+
+}
+
+.wrapper::-webkit-scrollbar{
+    width: 0;
+
+}
+
+
+.wrapper .tem{
+    min-width: 110px;
+    height: 110px;
+    text-align: center;
+    background-color: #baafaf;
+    margin-right: 20px;
+
+}
+
+@media (max-width: 1220px){
+    .textos{
+        position: absolute;
+        margin-top: 850px;
+        font-size: small;
+    }
+}

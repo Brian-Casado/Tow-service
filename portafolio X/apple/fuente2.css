@@ -1,0 +1,122 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=PT+Serif&display=swap');
+  
+    
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+    
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0; /* Cambia el color de fondo según tus preferencias */
+}
+
+.centered-content {
+    text-align: center;
+    position: relative;
+    top: 50%;
+}
+
+.centered-image img {
+    width: 250px;
+    height: 300px;
+    border-radius: 5%;
+    text-align: center;
+    position: relative;
+    top: 30px;
+    
+}
+
+p {
+    font-size: 20px; /* Ajusta el tamaño de fuente según tus necesidades */
+    text-align: center;
+    padding: 50px;
+}
+
+.logo {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.logo h2 {
+    margin: 0;
+    font-size: 24px;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.logo h2:hover {
+    transform: scale(1.070);
+}
+
+.El-nombre {
+    text-align: center;
+    animation: blink 2s infinite; /* Agrega la animación de parpadeo */
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #333; /* Cambia el color de los iconos */
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ff5722; /* Cambia el color al pasar el cursor */
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #d75611;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #d04d1d;
+    transform: translateY(-2px); /* Agrega una pequeña elevación al pasar el cursor */
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave */
+}
+
+/* Agrega estilos de animación para el botón CTA */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05); 
+    }
+}
+
+.cta-button:hover {
+    transform: scale(1.05);
+}
+
+/* El resto del CSS permanece sin cambios */
+
+
+.fuente1-link{
+    color: #b36710;
+}
